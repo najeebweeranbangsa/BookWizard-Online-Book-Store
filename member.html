@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Membership Registration Form</title>
+
+        <style>
+
+
+*{
+	margin:0;
+	padding:0;
+    font-family:'Spartan',sans-serif;
+	
+}
+
+body {
+   
+    background-size: cover;
+    font-family: 'Droid Serif', serif;
+    
+}
+
+#mass {
+    font-size: 30px;
+    background: #6997C9;
+    width: 25rem;
+    height: 30rem;
+    margin: auto;
+    position: absolute;
+    top: 110px;
+    left: 0px; 
+    right: 400px;
+    bottom: 0;
+    opacity: .95;
+}
+
+#bass {
+    font-size: 30px;
+    background:#6997C9;
+    width: 25rem;
+    height: 30rem;
+    margin: auto;
+    position: absolute;
+    top: 110px;
+    left: 500px;
+    right: 10px;;
+    bottom: 0;
+    opacity: .95;
+    
+}
+
+#terms p{
+   text-align: center; 
+    color: white;
+    font-size: medium;
+}
+#header{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding: 20px 80px;
+	background:#6997C9;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+	position: sticky;
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+}
+
+#navbar li{
+	list-style:none;
+	padding:0 20px;
+	align-items:left;
+}
+#navbar li a{
+	text-decoration: none;
+	font-size:16px;
+	font-weight:600;
+	color: #1a1a1a;	
+	transition: 0.3s ease;
+}
+#navbar li a:hover{
+	color:#088178;
+}
+header {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5rem;
+    height: 5rem;
+    background-color: #6997C9;
+    
+    font-size: 3rem;
+    color: #070707;
+}
+
+fieldset {
+    border: 0;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background: rgb(6, 165, 54);
+    border: 0;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+input {
+    background: transparent;
+    border: 0;
+    border-left: 6px solid;
+    border-color: #099232;
+    padding: 20px;
+    color: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="radio"]:focus {
+    outline: 0;
+    background: rgba(235, 30, 54, 0.3);
+    border-radius: 1.2rem;
+    border-color: transparent;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: #d3d3d3;
+    font-size: 20px;
+}
+
+#logo {
+    
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    }
+footer {
+	display: flex;
+	flex-wrap: column;
+	justify-content: space-between;
+    background-color: #d3d3d3;
+    
+}
+footer .col{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+    margin-right: 30px;
+}
+footer .col a{
+	color: #606063;
+}
+
+footer h4{
+	font-size: 13px;
+	padding-bottom: 20px;
+    
+}
+footer p{
+	font-size: 13px;
+	margin: 0 0 8px 0;
+    color: #606063;
+}
+footer a{
+	font-size: 13px;
+	margin: 0 0 8px 0;
+	text-decoration: none;
+	columns: #222;
+	margin-bottom: 10px;
+    color: #606063;
+}
+footer .follow i{
+	color: #465b52;
+	padding-right: 4px;
+	cursor:pointer;
+}
+footer .install .row img{
+	border: 1px solid #088178;
+	border-radius: 6px;
+}
+footer .install img{
+	margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+	color: #088178;
+}
+footer .copyright{
+	width: 100px;
+	text-align: center;
+}
+
+
+        </style>
+    </head>
+    <body background="img/bgimage.jpg">
+        
+        <div id="logo">
+           <a href="index.html"><img src="img/logo.png" class="logo" ></a>
+           </div>
+           <section id="header">
+			<a href="index.html"><img src="img/logo.png" class="logo"8 ></a>
+			<div>
+				<ul id="navbar">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="member.html">Become a Member</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="about.html">About</a></li>
+					
+				</ul>
+			</div>
+		</section>
+            
+           <form method="post">
+              <fieldset>
+                  <br>
+                  <br>
+                 <br/>
+                 <div id="mass"><br><br>
+                 <input type="text" name="first name" id="first name" placeholder="First Name" size="35px" required >
+                 <br/><br/>
+                 <input type="text" name="last name" id="last name" placeholder="Last Name" size="35px" required >
+                 <br/><br/>
+                 <input type="email" name="email" id="email" placeholder="E-mail" size="35px" required>
+                 <br/><br/>
+                 <input type="text" name="mobile number" id="mobile number" placeholder="Mobile Number" size="35px" required>
+                 <br/><br/>
+                </div>
+                <br><br><br>
+                 <div id="bass"><br><br>
+                 <input type="password" name="password" id="password" placeholder="Password" size="35px" required><br><br>
+                 <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" size="35px" required><br/><br/>
+                 <input type="text" name="address" id="address" placeholder="Street address" size="35px" required>
+                 <br/>
+                 <br/>
+                 <input type="text" name="city" id="city" placeholder="City" size="35px" required>
+                </div>
+                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                 <div>
+                   
+                 <label for="submit"></label>
+                 <input type="submit" name="submit" id="submit" value="REGISTER">
+                 </div>
+              </fieldset>
+              <br>
+              <div id="terms">
+                <p>By clicking the "Register" button, you are creating an account,
+                    and<br> agree to bookwizard.lk <strong>Terms of Service</strong> and <strong>Privacy Policy.</strong></p>
+              </div>
+                
+           </form>
+           <br><br>
+           <footer class="section-p1">
+               <br>
+			<div class="col">
+                <br>
+                <a href="index.html"><img src="img/logo.png" class="logo" ></a>
+				<br>
+                <div></div>
+				<h4>Contact</h4>
+				<p><strong>Address:</strong>No 562, Katugastota Road,<br> Colombo 7</p>
+				<p><strong>Phone :</strong>+81 153 5 869</p>
+				<p><strong>Hours :</strong>9:00 - 5:00. Mon - Sat</p>
+				<div>
+					<br>
+                    <h4>Follow Us</h4>
+					<div class="icon">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter-f"></i>
+						<i class="fab fa-instagram-f"></i>
+						<i class="fab fa-piterest-f"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+                <br>
+				<h4>About</h4>
+				<a href="#">About Us</a>
+				<a href="#">Delivery Information</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms & Conditions</a>
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="col">
+                <br>
+				<h4>My Account</h4>
+				<a href="#">Sign In</a>
+				<a href="#">View Cart</a>
+				<a href="#">My Wishlist</a>
+				<a href="#">Track My Order</a>
+				<a href="#">Help</a>
+			</div>
+           
+			<div class="co install">
+                <br>
+				<h4>Install App</h4>
+				<p>Form App Store or Google Play</p>
+				<div class="row">
+					<img src="img/pay/app.jpg" alt="">
+					<img src="img/pay/play.jpg" alt="">
+				</div>
+				<p>Secured Payment Gateways</p>
+				<img src="img/pay/pay.png" alt="">
+			</div>
+		</footer>
+     </body>
+</html>
